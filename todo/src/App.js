@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import {count, length} from './numbers';
 
 const number = 35;
 const multiply = 98*44;
 const compare = multiply > 4000;
 const isHuman = multiply < 4000;
+const solution = `count * length = ${count*length}`;
 
 
 function App() {
@@ -30,6 +32,9 @@ function App() {
         </p>
         <p>
           {isHuman ? 'At first becomes a human' : 'Just start today' }
+        </p>
+        <p>
+          {solution}
         </p>
         <a
           className="App-link"
